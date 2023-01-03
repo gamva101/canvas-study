@@ -1,0 +1,10 @@
+{
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "vueIndentScriptAndStyle": true,
+  "endOfLine": "auto",
+  "tabWidth": 4,
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "printWidth": 120
+}

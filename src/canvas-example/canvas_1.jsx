@@ -1,15 +1,16 @@
-import { useEffect, useState } from "react";
-import { fabric } from "fabric";
-import styled from "styled-components";
+import React from 'react';
+import { useEffect, useState } from 'react';
+import { fabric } from 'fabric';
+import styled from 'styled-components';
 
 export default function MyCanvas() {
-    const [canvas, setCanvas] = useState("");
-
+    const [canvas, setCanvas] = useState('');
+    console.log(canvas);
     const initCanvas = () =>
-        new fabric.Canvas("canvas", {
+        new fabric.Canvas('canvas', {
             height: 400,
             width: 400,
-            backgroundColor: "pink",
+            backgroundColor: 'pink',
         });
 
     useEffect(() => {
