@@ -7,6 +7,7 @@ import Home from './Home';
 import MyCanvas from './canvas-example/canvas_1';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CanvasList from './canvas-example/canvas-list';
+import Canvas2 from './canvas-example/canvas_2';
 
 function App() {
     const [open, setOpen] = React.useState(false);
@@ -32,6 +33,7 @@ function App() {
 
                 <Route path="canvas-list" element={<CanvasList />} />
                 <Route path="canvas-list/1" element={<MyCanvas />} />
+                <Route path="canvas-list/2" element={<Canvas2 />} />
             </Routes>
         </BrowserRouter>
     );

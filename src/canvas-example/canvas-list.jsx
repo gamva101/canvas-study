@@ -19,13 +19,19 @@ export default function GridList() {
                 </Link>
             </Grid>
             <Grid item xs={6}>
-                <Item>2</Item>
+                <Link to="2">
+                    <Item>2</Item>
+                </Link>
             </Grid>
             <Grid item xs={6}>
-                <Item>3</Item>
+                <Link to="3">
+                    <Item>3</Item>
+                </Link>
             </Grid>
             <Grid item xs={6}>
-                <Item>4</Item>
+                <Link to="4">
+                    <Item>4</Item>
+                </Link>
             </Grid>
         </Grid>
     );
