@@ -6,12 +6,12 @@ import styled from 'styled-components';
 export default function Canvas2() {
     const [canvas, setCanvas] = useState('');
     const circle = new fabric.Circle({ radius: 75, fill: 'blue' });
-    const rect = new fabric.Canvas('canvas', {
+    const bg = new fabric.Canvas('canvas', {
         height: 400,
         width: 400,
         backgroundColor: 'pink',
     });
-    rect.add(circle);
+    bg.add(circle);
     circle.on('selected', function () {
         console.log('selected a circle');
     });
@@ -22,7 +22,7 @@ export default function Canvas2() {
     });
 
     useEffect(() => {
-        setCanvas(rect);
+        setCanvas(bg);
     }, []);
     return (
         <StyledComponent>
